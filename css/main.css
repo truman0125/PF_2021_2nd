@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+    /*헬베티카75체*/
+    font-family: Helvetica75-Bold;
+    src: url(fonts/Helvetica75-Bold.woff) format("woff");
+}
+
+@font-face {
+    /*스포카 한 산스네오체*/
+    font-family: SpoqaHanSansNeo-Light;
+    src: url(fonts/SpoqaHanSansNeo-Light.woff) format("woff");
+}
+
+h1 {
+    font-family: Helvetica75-Bold;
+}
