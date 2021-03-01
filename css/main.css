@@ -1,17 +1,129 @@
 @charset "utf-8";
 
-@font-face {
-    /*헬베티카75체*/
-    font-family: Helvetica75-Bold;
-    src: url(fonts/Helvetica75-Bold.woff) format("woff");
-}
+/*공통외부css*/
+@import url(core.css);
+@import url(reset.css);
 
 @font-face {
     /*스포카 한 산스네오체*/
     font-family: SpoqaHanSansNeo-Light;
-    src: url(fonts/SpoqaHanSansNeo-Light.woff) format("woff");
+    src: url(../fonts/SpoqaHanSansNeo-Light.woff) format("woff");
 }
 
-h1 {
+@font-face {
+    /*헬베티카75체*/
     font-family: Helvetica75-Bold;
+    src: url(../fonts/Helvetica75-Bold.woff) format("woff");
+}
+
+body{
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(51,51,51);
+    overflow-x: hidden;
+}
+/***********상단영역***********/
+header{
+    min-width: 1200px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    outline: 2px solid red;
+}
+/***********상단1 로고 및 로그인*/
+.top{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+header .logo a{
+    /*height: 60px;*/
+    display: block;
+    padding: 0 0 0 70px;
+    font-family: 'Helvetica75-Bold';
+    /*font-weight: 400;*/
+    font-size: 24px;
+    color: rgb(255,255,255);
+    letter-spacing: 1px;
+    line-height: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../images/logo_porter.jpg);
+    background-size: 59px;
+}
+.member{
+    float: right;
+}
+.member a{
+    height: 60px;
+    float: left;
+    margin: 0 0 0 9px;
+    padding: 0 0 0 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(255,255,255);
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+.member a::after{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 1px;
+    height: 11px;
+    content: "";
+    display: block;
+    background-color: rgb(255,255,255);
+}
+.member a:first-child::after{
+    content: none;
+}
+
+
+/***********상단2 메뉴*/
+.gnb{
+    background-color: rgb(238,238,238);
+}
+.gnb > ul{
+    text-align: center;
+    
+    /*font-size: 0;*/
+}
+.gnb > ul >li:first-child{
+    margin: 0;
+}
+.gnb > ul >li{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    float: none;
+    margin: 0 0 0 35px;
+    vertical-align: top;
+}
+.gnb > ul > li > a{
+    height: 40px;
+    display: block;
+    font-family: 'Helvetica75-Bold';
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(0,0,0);
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+/********************************/
+main{
+    height: 0;
+}
+footer{
+    height: 0;
 }
