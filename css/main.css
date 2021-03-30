@@ -16,12 +16,17 @@
     src: url(../fonts/Helvetica75-Bold.woff) format("woff");
 }
 
+html{
+    height: 2890px;
+    
+}
+
 body{
     font-family: 'Spoqa Han Sans', sans-serif;
     font-size: 12px;
     line-height: 1.5;
     color: rgb(51,51,51);
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 /***********상단영역***********/
 header{
@@ -30,7 +35,7 @@ header{
     margin: 0;
     padding: 0;
     background-color: #333;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 /***********상단1 로고 및 로그인*/
 .top{
@@ -121,9 +126,422 @@ header .logo a{
     line-height: 40px;
 }
 /********************************/
-main{
-    height: 0;
+#cont{
+    width: 100%;
+    height: auto;
 }
-footer{
-    height: 0;
+/******** 메인슬라이드: 스와이퍼 플러그인 *******/
+/*스와이퍼 전체박스*/
+.swiper-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 545px;
+    margin-top: 20px;
 }
+/*스와이퍼 개별리스트*/
+.swiper-slide{
+    display: flex;
+    /*원래 flex는 부모박스에 잡지만
+    swiper는 자식요소에 셋팅한다!*/
+    justify-content: center;
+    align-content: center;
+}
+/*스와이퍼 이미지*/
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+/**************************************/
+/*카테고리*/
+#cate{
+    margin-top: 50px;
+}
+.cate{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+}
+/*카테고리 개별 박스*/
+.cate>li{
+    width: 220px;
+    height: 21px;
+    margin: 0 25px 35px 0;
+    padding-top: 220px;
+    text-align: center;
+    font-family: 'Helvetica75-Bold';
+    font-size: 14px;
+}
+/*a태그 꽉채우기*/
+.cate>li>a{
+    display: block;
+    /*width: 100%;*/
+    height: 100%;
+}
+.cate>li:nth-child(5),
+.cate>li:last-child{
+    margin: 0 0 35px;
+}
+/*카테고리 첫번째 페이지 이미지*/
+.cate_page1>li:first-child{
+    background-image: url(../images/02_img_category_bostonbag_d_1.jpg);
+    background-position: 0 10px;
+}
+.cate_page1>li:nth-child(2){
+    background-image: url(../images/03_img_category_garmentbag_d.jpg);
+}
+.cate_page1>li:nth-child(3){
+    background-image: url(../images/05_img_category_briefcase_d.jpg);
+}
+.cate_page1>li:nth-child(4){
+    background-image: url(../images/08_img_category_clutchbag_d.jpg);
+}
+.cate_page1>li:nth-child(5){
+    background-image: url(../images/10_img_category_rucksack_d.jpg);
+}
+.cate_page1>li:nth-child(6){
+    background-image: url(../images/11_img_category_daypack_d.jpg);
+}
+.cate_page1>li:nth-child(7){
+    background-image: url(../images/12_img_category_backpack_d.jpg);
+}
+.cate_page1>li:nth-child(8){
+    background-image: url(../images/13_img_category_totebag_d.jpg);
+}
+.cate_page1>li:nth-child(9){
+    background-image: url(../images/15_img_category_helmetbag_d.jpg);
+}
+.cate_page1>li:last-child{
+    background-image: url(../images/16_img_category_shoulderbag_d.jpg);
+}
+
+/*카테고리 두번째 페이지 이미지*/
+.cate_page2>li:first-child{
+    background-image: url(../images/17_img_category_messengerbag_d.jpg);
+}
+.cate_page2>li:nth-child(2){
+    background-image: url(../images/18_img_category_waistbag_d.jpg);
+}
+.cate_page2>li:nth-child(3){
+    background-image: url(../images/19_img_category_pouch_d.jpg);
+}
+.cate_page2>li:nth-child(4){
+    background-image: url(../images/20_img_category_other1_d.jpg);
+}
+.cate_page2>li:nth-child(5){
+    background-image: url(../images/22_img_category_wallet_d.jpg);
+}
+.cate_page2>li:nth-child(6){
+    background-image: url(../images/23_img_category_cardcase_d.jpg);
+}
+.cate_page2>li:nth-child(7){
+    background-image: url(../images/24_img_category_keycase_d.jpg);
+}
+.cate_page2>li:nth-child(8){
+    background-image: url(../images/25_img_category_passholder_d.jpg);
+}
+.cate_page2>li:nth-child(9){
+    background-image: url(../images/26_img_category_coincase_d.jpg);
+}
+.cate_page2>li:last-child{
+    background-image: url(../images/29_img_category_pencase_d.jpg);
+}
+/*카테고리 좌*우 이동버튼*/
+#cate>div>.swiper-button-prev{
+    left: 0;
+    right: auto;
+    color: #333;
+}
+#cate>div>.swiper-button-next{
+    right: 0;
+    left: auto;
+    color: #333;
+}
+/*블릿 안보이게*/
+#cate>div>.swiper-pagination,
+#cate>.swiper-pagination-clickable,
+#cate>.swiper-pagination-bullets{
+    display: none;
+}
+/*************************************/
+/*인스타그램*/
+#insta{
+    width: 980px;
+    height: 752px;
+    margin: 0 auto;
+}
+/*텍스트 박스*/
+.text{
+    width: 980px;
+    height: 66px;
+    text-align: center;
+    font-family: 'Helvetica75-Bold';
+}
+/*인스타그램 텍스트*/
+.ins{
+    font-size: 32px;
+}
+/*두번째줄 텍스트*/
+.txt{
+    display: inline-block;
+    margin: 0 0 0 22px;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(0,0,0);
+    line-height: 1;
+    text-decoration: underline;
+}
+/*가상요소로 인스타그램 로고 넣기*/
+.txt::before{
+    width: 23px;
+    height: 23px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -24px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/ico_instagram_wt_23x23.png);
+}
+
+/*인스타그램 사진 박스 설정*/
+.insta{
+    width: 980px;
+    height: 660px;
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*각 사진 박스 사이즈*/
+.insta>li{
+    width: 300px;
+    height: 300px;
+}
+/*사진박스 간격 조정*/
+.insta>li:nth-child(2),
+.insta>li:nth-child(5){
+    margin: 0 auto;
+}
+/*박스 사이즈에 이미지 맞춤*/
+.insta>li img{
+    width: 100%;
+    height: 100%;
+}
+/**************************************/
+/*스와이퍼 전체박스*/
+#reco{
+    margin: 57px 0 100px;
+}
+#reco>.swiper-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1225px;
+    height: 356px;
+    margin-top: 0;
+}
+/*리커맨드*/
+.reco{
+    margin: 0 auto;
+    width: 1225px;
+    height: 281px;
+}
+.reco>li{
+    width: 220px;
+    height: 281px;
+    padding: 0 12.5px;
+    font-family: 'arial';
+    font-size: 14px;
+}
+.reco>li>span:first-child{
+    margin-top: 15px;
+}
+.reco>li img{
+    width: 215px;
+    height: 215px;
+    margin-bottom: 15px;
+}
+/*카테고리 좌*우 이동버튼*/
+#reco>div>.swiper-button-prev{
+    top: 58%;
+    left: 0;
+    right: auto;
+    color: #333;
+}
+#reco>div>.swiper-button-next{
+    top: 58%;
+    right: 0;
+    left: auto;
+    color: #333;
+}
+
+/*블릿 안보이게*/
+#reco>div>.swiper-pagination,
+#reco>.swiper-pagination-clickable,
+#reco>.swiper-pagination-bullets{
+    display: none;
+}
+
+/*텍스트 박스*/
+.text2{
+    width: 1225px;
+    height: 73px;
+    text-align: center;
+    font-family: 'Helvetica75-Bold';
+}
+/*리커맨드 텍스트*/
+.ins2{
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+}
+/*리커맨드 밑에 가상 선*/
+.ins2::before{
+    width: 212px;
+    height: 1px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 2px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+   
+}
+.ins2::after{
+    width: 212px;
+    height: 1px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 47px;
+    left: 2px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+   
+}
+/*두번째줄 텍스트*/
+.txt2{
+    font-size: 14px;
+    color: rgb(0,0,0);
+    font-style: italic;
+}
+/**********************************************/
+/*하단영역*/
+#info{
+    position: relative;
+    height: 315px;
+    background-color: #000;
+    padding: 45px 0;
+}
+/*속 박스 공통*/
+.inner{
+    width: 1200px;
+    height: 112px;
+    margin: 0 auto;
+    /*background-color: rgba(255, 255, 255, 0.24);*/
+}
+/*인포박스 설정*/
+.info{
+    color: #fff;
+}
+/*대분류 글자 설정*/
+.tit{
+    font-weight: bold;
+    font-size: 14px;
+}
+/*인포 대분류별 간격*/
+.title{
+    float: left;
+    margin-left: 100px;
+}
+/*인포 첫번째 박스 왼쪽 간격 초기화*/
+.title:first-child{
+    margin-left: 0;
+}
+/*리셋 기본 설정 플롯 레프트 초기화*/
+.title > ul > li{
+    float: none;
+}
+/*타이틀과 첫번째 li간격*/
+.title > ul > li:first-child{
+    margin-top: 15px;
+}
+/*소제목 줄간격*/
+.title > ul > li a{
+    line-height: 28px;
+}
+
+/*인포 글자 공통*/
+.info a{
+    color: #fff;
+    font-size: 14px;
+}
+
+/*sns박스*/
+.sns{
+    float: right;
+}
+/*sns a공통*/
+.sns a{
+    width: 23px;
+    height: 23px;
+    float: left;
+    margin: 0 0 0 20px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*유튜브*/
+.sns > .youtube{
+    background-image: url(../images/ico_youtube_wt_23x17.png);
+}
+/*유튜브*/
+.sns > .instagram{
+    background-image: url(../images/ico_instagram_wt_23x23.png);
+}
+
+
+/*주소 박스*/
+.addr{
+    margin-top: 40px;
+    padding-top: 42px;
+    border-top: 1px solid rgb(177,109,1);
+    font-style: normal;
+}
+/*주소 박스 안에 텍스트 박스*/
+.text_box{
+    float: left;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(255,255,255);
+    line-height: 28px;
+}
+/*a링크 초기화*/
+.text_box>a:link{
+    text-decoration: none;
+}
+/*a태그 색상 상속*/
+.text_box>a{
+    color: inherit;
+}
+/*로고*/
+.footer_logo{
+    width: 97px;
+    height: 65px;
+    float: right;
+    margin: 17px 0 0;
+    text-indent: -9999px;/*a링크 안에 글자 숨기기*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/logo_porter.jpg);
+}
+

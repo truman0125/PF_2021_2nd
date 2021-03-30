@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>2차 포트폴리오</title>
-    <script src="jquery-1.7.2.min.js"></script>
-    <script src="jquery-ui.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
     <!--1.상단영역-->
     <div id="top">
-        <header class="ibx clb">
+        <header class="clb">
             <div class="top">
                 <h1 class="logo">
                     <a href="">ONLINE STORE</a>
@@ -53,19 +55,402 @@
         </header>
     </div>
     <!--2.컨텐츠영역-->
+    <!--2-1.메인배너-->
     <div id="cont">
-        <main class="ibx clb cont">
-
-       
-        </main>
+        <div class="swiper-container">
+            <ul class="swiper-wrapper">
+             <li class="swiper-slide">
+                 <a href="https://korea.shop-porter.com/product/list.asp?keyword=DENIM">
+                     <img src="images/main01.jpg" alt="데님">
+                 </a>
+             </li>
+             <li class="swiper-slide">
+                 <a href="https://korea.shop-porter.com/product/list.asp?gno=42">
+                     <img src="images/main02.jpg" alt="스몰아이템">
+                 </a>
+             </li>
+             <li class="swiper-slide">
+                 <a href="https://korea.shop-porter.com/product/list.asp?gno=41">
+                     <img src="images/main03.jpg" alt="클래식">
+                 </a>
+             </li>
+             <li class="swiper-slide">
+                 <a href="https://korea.shop-porter.com/product/list.asp?keyword=HEAT+TYPE">
+                     <img src="images/main04.jpg" alt="히트타입">
+                 </a>
+             </li>
+             <li class="swiper-slide">
+                 <a href="https://korea.shop-porter.com/product/list.asp?gno=28">
+                     <img src="images/main05.jpg" alt="85주년">
+                 </a>
+             </li>
+            
+            </ul>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+    <!--2-2.카테고리-->
+    <div id="cate">
+        <div class="swiper-container">
+            <span class="bld">카테고리</span>
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <ol class="cate_page1 cate">
+                        <li>
+                            <a href="">
+                                <sapn>BOSTON BAG</sapn>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>GARMENT BAG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>BRIEFCASE</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <sapn>CLUTCH BAG</sapn>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>RUCKSACK</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>DAYPACK</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>BACKPACK</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>TOTE BAG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>HELMET BAG</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>SHOULDER BAG</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            <li class="swiper-slide">
+                <ol class="cate_page2 cate">
+                     <li>
+                        <a href="">
+                            <sapn>MESSENGER BAG</sapn>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>WAIST BAG</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>POUCH</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <sapn>OTHER</sapn>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>WALLET</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>CARD CASE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>KEY CASE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>PASS HOLDER</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>COIN CASE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>PEN CASE</span>
+                        </a>
+                    </li>
+                </ol>
+                    <!-- Add Pagination -->
+              </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </div>
+    <!--2-3.인스타그램-->   
+    <section id="insta">
+            <span class="bld">인스타그램</span>
+            <div class="text">
+                <p class="ins">INSTAGRAM</p>
+                <p class="txt">Follow us on Instagram</p>
+            </div>
+            <ul class="insta">
+                <li>
+                    <a href="">
+                        <img src="images/insta01.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/insta02.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/insta03.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/insta04.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/insta05.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/insta06.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            
+        </section>
+    <!--2-4.리커맨드-->
+       <div id="reco">
+        <div class="swiper-container">
+        <span class="bld">RECOMMEND(추천)</span>
+             <div class="text2">
+                <p class="ins2">RECOMMEND</p>
+                <p class="txt2">Introduce Popular Items</p>
+            </div>
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <ol class="reco_page1 reco">
+                        <li>
+                            <a href="">
+                               <img src="images/PT-592-09992PT10.jpg" alt="PT-592-09992PT10">
+                               <span>SMOKY CARD CASE</span><br>
+                               <span>판매가격 68,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-622-66672PT30.jpg" alt="PT-622-66672PT30">
+                                <span>TANKER NEW 3WAY BRIEFCASE</span><br>
+                                <span>판매가격 68,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-622-69125PT11.jpg" alt="PT-622-69125PT11">
+                                <span>TANKER NEW SHOULDER BAG</span><br>
+                                <span>판매가격 248,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-680-17982PT30.jpg" alt="PT-680-17982PT30">
+                                <span>HEAT TYPE-C SHOULDER BAG</span><br>
+                                <span>판매가격 428,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-707-07178PT60.jpg" alt="PT-707-07178PT60">
+                                <span>FREE STYLE MULTI COIN CASE</span><br>
+                                <span>판매가격 68,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            <li class="swiper-slide">
+                <ol class="reco_page2 reco">
+                     <li>
+                            <a href="">
+                               <img src="images/PT-592-07576PT10.jpg" alt="PT-592-07576PT10">
+                               <span>SMOKY RUCKSACK</span><br>
+                               <span>판매가격 288,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-876-05808PT10.jpg" alt="PT-876-05808PT10">
+                                <span>SPACE TOTE BAG</span><br>
+                                <span>판매가격 348,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-892-15106PT50.jpg" alt="PT-892-15106PT50">
+                                <span>CLASS SHOULDER BAG</span><br>
+                                <span>판매가격 548,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-539-05284PT10.jpg" alt="PT-539-05284PT10">
+                                <span>HEAT TYPE-C SHOULDER BAG</span><br>
+                                <span>판매가격 328,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-592-06372PT50.jpg" alt="PT-592-06372PT50">
+                                <span>SMOKY MONEY CLIP</span><br>
+                                <span>판매가격 78,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            <li class="swiper-slide">
+                <ol class="reco_page3 reco">
+                      <li>
+                            <a href="">
+                               <img src="images/PT-737-17820PT10.jpg" alt="PT-737-17820PT10">
+                               <span>HYBRID SACOCHE</span><br>
+                               <span>판매가격 138,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-892-15103PT50.jpg" alt="PT-892-15103PT50">
+                                <span>DENIM DRAWSTRING BAG(S)</span><br>
+                                <span>판매가격 208,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-703-06980PT10.jpg" alt="PT-703-06980PT10">
+                                <span>HEAT 3WAY BRIEFCASE</span><br>
+                                <span>판매가격 428,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-622-68331PT11.jpg" alt="PT-622-68331PT11">
+                                <span>TANKER NEW BRIEFCASE(L)</span><br>
+                                <span>판매가격 228,000원</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/PT-592-06579PT10.jpg" alt="PT-592-06579PT10">
+                                <span>SMOKY SHOULDER BAG</span><br>
+                                <span>판매가격 198,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+                    <!-- Add Pagination -->
+              </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+            
+
+        
+    
     <!--3.하단영역-->
-    <div id="info">
-        <footer class="ibx clb info">
-
-           
-        </footer>
-    </div>
+      <footer id="info">
+          <div class="inner">
+              <div class="info">
+                      <div class="title"> 
+                        <p class="tit">ABOUT US</p>
+                          <ul>
+                              <li><a href="">About Porter</a></li>
+                              <li><a href="">Store</a></li>
+                          </ul>
+                      </div>
+                      <div class="title">
+                          <p class="tit">MY ORDER</p>
+                          <ul>
+                              <li><a href="">주문조회</a></li>
+                              <li><a href="">교환/환불정책</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">MY ACCOUNT</p>
+                          <ul>
+                              <li><a href="">회원가입</a></li>
+                              <li><a href="">회원정보수정</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">HELP</p>
+                          <ul>
+                              <li><a href="">Q&amp;A</a></li>
+                              <li><a href="">FAQ</a></li>
+                              <li><a href="">Contact Us</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">CUSTOMER CARE</p>
+                          <ul>
+                              <li><a href="">개인정보취급방침</a></li>
+                              <li><a href="">이용약관</a></li>
+                          </ul>
+                      </div>
+                  
+              </div>
+              <div class="sns">
+                 <a href="https://www.youtube.com/channel/UCVMtjUXOs1A9AfbiND9S3cQ?view_as=subscriber" target="_blank" class="youtube">유튜브</a>
+                  <a href="https://www.instagram.com/porter_kr/" target="_blank" class="instagram">인스타그램</a>
+              </div>
+          </div>
+          <address class="addr">
+              <div class="inner">
+                  <div class="text_box">
+                      (주)스타럭스 대표이사 : 박상배 사업자등록번호 : 120-86-24028 통신판매업등록번호 : 서울 강남 - 4364호<br>
+                      본사 : 06155 서울시 강남구 삼성로 561 고객센터 02-540-0895 E-Mail : <a href="mailto:porter-korea@shop-porter.com">porter-korea@shop-porter.com</a><br>
+                      개인정보보호책임자 : EC팀 송대천 팀장 dcsong@starluxe.co.kr<br>
+                      Copyright (c) 2019 YOSHIDA & CO., LTD. ALL RIGHTS RESERVED
+                  </div>
+                  <a href="" class="footer_logo">Porter</a>
+              </div>
+          </address>
+      </footer>
 
 
 
