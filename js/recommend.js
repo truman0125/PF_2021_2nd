@@ -25,7 +25,7 @@ let pm = location.href;
 // indexOf(문자열) - 찾는 문자열의 위치순번을 알려줌
 // 그런데 이 문자열이 없다면 -1을 리턴함!
 if (pm.indexOf("?") === -1) { //물음표가 없다면
-    location.href = "men.html";
+    location.href = "index.html";
 } ///////// if문 //////////////////////
 
 
