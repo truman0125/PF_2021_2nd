@@ -174,9 +174,9 @@ header .logo a{
     font-size: 14px;
 }
 /*a태그 꽉채우기*/
-.cate>li>a{
+.cate a{
     display: block;
-    /*width: 100%;*/
+    width: 100%;
     height: 100%;
 }
 .cate>li:nth-child(5),

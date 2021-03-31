@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2차 포트폴리오</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/recommend.js"></script>
+
+</head>
+
+<body>
+    <!--1.상단영역-->
+    <div id="top">
+        <header class="clb">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="">ONLINE STORE</a>
+                </h1>
+                <div class="member">
+                    <a href="">Join</a>
+                    <a href="">Login</a>
+                    <a href="">Cart(0)</a>
+                </div>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="">NEW IN</a>
+                    </li>
+                    <li>
+                        <a href="">BAGS</a>
+                    </li>
+                    <li>
+                        <a href="">ACCESSORIES</a>
+                    </li>
+                    <li>
+                        <a href="">COLLABORATION</a>
+                    </li>
+                    <li>
+                        <a href="">JOURNAL</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="">STORE</a>
+                    </li>
+                </ul>
+            </nav>
+         
+        </header>
+    </div>
+    <!---------------------------------------------------------------------->
+    <!--2.컨텐츠영역-->
+    <section id="cont1">
+		<ul>
+			<li>
+				<!--상품 이미지 영역-->
+			
+				<div id="#bbox">
+					<img src="images/m1-1.jpg" alt="선택이미지" id="bigimg">
+				</div>
+				<div class="thumbs">
+					<a href="images/m1-1.jpg" data-large="images/m1-big.jpg"><img src="images/m1-1.jpg" alt="썸네일" /></a>
+					<a href="images/m1-2.jpg" data-large="images/m1-2.jpg"><img src="images/m1-2.jpg" alt="썸네일" /></a>
+					<a href="images/m1-3.jpg" data-large="images/m1-3.jpg"><img src="images/m1-3.jpg" alt="썸네일" /></a>
+					<a href="images/m1-4.jpg" data-large="images/m1-4.jpg"><img src="images/m1-4.jpg" alt="썸네일" /></a>
+					<a href="images/m1-5.jpg" data-large="images/m1-5.jpg"><img src="images/m1-5.jpg" alt="썸네일" /></a>
+					<a href="images/m1-6.jpg" data-large="images/m1-6.jpg"><img src="images/m1-6.jpg" alt="썸네일" /></a>
+				</div>
+				<!-- 멀티줌 플러그인용 
+					링크옵션
+					href : 스테이지에 보여줄 이미지경로
+					data-large : 큰이미지경로
+				-->
+
+			</li>
+			<li>
+				<!--상품 정보 영역-->
+				<h1>HOME &gt; MEN &gt; 티셔츠/셔츠</h1>
+				<div>
+					<ol>
+						<li>
+							<img src="images/dx_ico_new-28143800.gif" alt="new버튼">
+						</li>
+						<li id="gtit">상품명</li>
+						<li>
+							<img src="images/icon_type02_social01.gif" alt="페이스북"><img
+								src="images/icon_type02_social02.gif" alt="트위터"><img src="images/icon_mail02.gif"
+								alt="이메일"><img src="images/btn_source_copy.gif" alt="URL복사">
+						</li>
+						<li>
+							<span>판매가</span>
+							<span id="gprice">99,000</span>
+						</li>
+						<li>
+							<span>적립금</span>
+							<span><img src="images/icon_my_m02.gif" alt="적립금">4,950(5%적립)</span>
+						</li>
+						<li>
+							<span>무이자할부</span>
+							<span>부분 무이자 할부 혜택 <img src="images/view_btn_nointerest_card.gif" alt="무이자카드보기"></span>
+						</li>
+						<li>
+							<span>상품코드</span>
+							<span id="gcode">23fdfsdfsfsd</span>
+						</li>
+						<li>
+							<span>사이즈</span>
+							<span>95 100 105 110</span>
+						</li>
+						<li>
+							<span>구매수량</span>
+							<span>
+								<input type="text" id="sum" value="1" readonly />
+								<!--
+								readonly 속성은 직접입력을 막음
+								disable 속성은 입력창의 비활성화
+								-->
+								<b class="chg_num">
+									<img src="images/cnt_up.png" alt="증가">
+									<img src="images/cnt_down.png" alt="감소">
+								</b>
+							</span>
+						</li>
+						<li>
+							<span>컬러</span>
+							<span></span>
+						</li>
+						<li>
+							<span>권장계절</span>
+							<span>여름</span>
+						</li>
+						<li class="tot">
+							<span>총합계</span>
+							<span id="total">13,000</span>원
+						</li>
+					</ol>
+
+				</div>
+				<div>
+					<!--버튼영역-->
+					<button class="btn btn1">BUY NOW</button>
+					<button class="btn">SHOPPING CART</button>
+					<button class="btn">WISH LIST</button>
+
+				</div>
+			</li>
+		</ul>
+		<aside class="dimgs">
+			<!--상품 상세 이미지-->
+
+		</aside>
+	</section>
+   
+
+        
+    <!---------------------------------------------------------------------------->
+    <!--3.하단영역-->
+      <footer id="info">
+          <div class="inner">
+              <div class="info">
+                      <div class="title"> 
+                        <p class="tit">ABOUT US</p>
+                          <ul>
+                              <li><a href="">About Porter</a></li>
+                              <li><a href="">Store</a></li>
+                          </ul>
+                      </div>
+                      <div class="title">
+                          <p class="tit">MY ORDER</p>
+                          <ul>
+                              <li><a href="">주문조회</a></li>
+                              <li><a href="">교환/환불정책</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">MY ACCOUNT</p>
+                          <ul>
+                              <li><a href="">회원가입</a></li>
+                              <li><a href="">회원정보수정</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">HELP</p>
+                          <ul>
+                              <li><a href="">Q&amp;A</a></li>
+                              <li><a href="">FAQ</a></li>
+                              <li><a href="">Contact Us</a></li>
+                          </ul>
+                      </div>
+                      <div class="title"> 
+                          <p class="tit">CUSTOMER CARE</p>
+                          <ul>
+                              <li><a href="">개인정보취급방침</a></li>
+                              <li><a href="">이용약관</a></li>
+                          </ul>
+                      </div>
+                  
+              </div>
+              <div class="sns">
+                 <a href="https://www.youtube.com/channel/UCVMtjUXOs1A9AfbiND9S3cQ?view_as=subscriber" target="_blank" class="youtube">유튜브</a>
+                  <a href="https://www.instagram.com/porter_kr/" target="_blank" class="instagram">인스타그램</a>
+              </div>
+          </div>
+          <address class="addr">
+              <div class="inner">
+                  <div class="text_box">
+                      (주)스타럭스 대표이사 : 박상배 사업자등록번호 : 120-86-24028 통신판매업등록번호 : 서울 강남 - 4364호<br>
+                      본사 : 06155 서울시 강남구 삼성로 561 고객센터 02-540-0895 E-Mail : <a href="mailto:porter-korea@shop-porter.com">porter-korea@shop-porter.com</a><br>
+                      개인정보보호책임자 : EC팀 송대천 팀장 dcsong@starluxe.co.kr<br>
+                      Copyright (c) 2019 YOSHIDA & CO., LTD. ALL RIGHTS RESERVED
+                  </div>
+                  <a href="" class="footer_logo">Porter</a>
+              </div>
+          </address>
+      </footer>
+
+
+
+</body></html>
+
