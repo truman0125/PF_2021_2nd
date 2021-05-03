@@ -11,6 +11,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/recommend.js"></script>
+    <script src="js/recommend2.js"></script>
 
 </head>
 
@@ -58,21 +59,46 @@
     </div>
     <!---------------------------------------------------------------------->
     <!--2.컨텐츠영역-->
+    <div id="cont">
+
     <section id="cont1">
 		<ul>
-			<li>
+			<li class="cont1_img">
 				<!--상품 이미지 영역-->
 			
-				<div id="#bbox">
-					<img src="images/m1-1.jpg" alt="선택이미지" id="bigimg">
+				<div id="bbox">
+					<img src="images/recommend_sum/m1-1.jpg" alt="선택이미지" id="bigimg">
 				</div>
 				<div class="thumbs">
-					<a href="images/m1-1.jpg" data-large="images/m1-big.jpg"><img src="images/m1-1.jpg" alt="썸네일" /></a>
-					<a href="images/m1-2.jpg" data-large="images/m1-2.jpg"><img src="images/m1-2.jpg" alt="썸네일" /></a>
-					<a href="images/m1-3.jpg" data-large="images/m1-3.jpg"><img src="images/m1-3.jpg" alt="썸네일" /></a>
-					<a href="images/m1-4.jpg" data-large="images/m1-4.jpg"><img src="images/m1-4.jpg" alt="썸네일" /></a>
-					<a href="images/m1-5.jpg" data-large="images/m1-5.jpg"><img src="images/m1-5.jpg" alt="썸네일" /></a>
-					<a href="images/m1-6.jpg" data-large="images/m1-6.jpg"><img src="images/m1-6.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-1.jpg" data-large="images/m1-big.jpg">
+                        <img src="images/recommend_sum/m1-1.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-2.jpg" data-large="images/m1-2.jpg">
+                        <img src="images/recommend_sum/m1-2.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-3.jpg" data-large="images/m1-3.jpg">
+                        <img src="images/recommend_sum/m1-3.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-4.jpg" data-large="images/m1-4.jpg">
+                        <img src="images/recommend_sum/m1-4.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-5.jpg" data-large="images/m1-5.jpg">
+                        <img src="images/recommend_sum/m1-5.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-6.jpg" data-large="images/m1-6.jpg">
+                        <img src="images/recommend_sum/m1-6.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-7.jpg" data-large="images/m1-7.jpg">
+                        <img src="images/recommend_sum/m1-7.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-8.jpg" data-large="images/m1-8.jpg">
+                        <img src="images/recommend_sum/m1-8.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-9.jpg" data-large="images/m1-9.jpg">
+                        <img src="images/recommend_sum/m1-9.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-10.jpg" data-large="images/m1-10.jpg">
+                        <img src="images/recommend_sum/m1-10.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-11.jpg" data-large="images/m1-11.jpg">
+                        <img src="images/recommend_sum/m1-11.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-12.jpg" data-large="images/m1-12.jpg">
+                        <img src="images/recommend_sum/m1-12.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-13.jpg" data-large="images/m1-13.jpg">
+                        <img src="images/recommend_sum/m1-13.jpg" alt="썸네일" /></a>
+					<a href="images/recommend_sum/m1-14.jpg" data-large="images/m1-14.jpg">
+                        <img src="images/recommend_sum/m1-14.jpg" alt="썸네일" /></a>
+					
 				</div>
 				<!-- 멀티줌 플러그인용 
 					링크옵션
@@ -81,42 +107,45 @@
 				-->
 
 			</li>
-			<li>
+			<li class="cont1_pdc">
 				<!--상품 정보 영역-->
-				<h1>HOME &gt; MEN &gt; 티셔츠/셔츠</h1>
-				<div>
+				<div class="pdc_tit">					
+                    <p class="brand">PORTER/ PORTER SMOKY</p>                
+                    <p class="name">CARD CASE</p>
+                </div>
+				<div class="pdc_info">
 					<ol>
-						<li>
-							<img src="images/dx_ico_new-28143800.gif" alt="new버튼">
-						</li>
-						<li id="gtit">상품명</li>
-						<li>
-							<img src="images/icon_type02_social01.gif" alt="페이스북"><img
-								src="images/icon_type02_social02.gif" alt="트위터"><img src="images/icon_mail02.gif"
-								alt="이메일"><img src="images/btn_source_copy.gif" alt="URL복사">
-						</li>
-						<li>
-							<span>판매가</span>
+                        <li>
+                            <span id="gcode">Product No:PT-592-09992PT10</span>
+                        </li>
+						<li class="line">
+							<span class="bx1">판매가</span>
 							<span id="gprice">99,000</span>
 						</li>
-						<li>
-							<span>적립금</span>
-							<span><img src="images/icon_my_m02.gif" alt="적립금">4,950(5%적립)</span>
+												
+						<li class="line">
+							<span class="bx1">소재</span>
+							<span class="bx2">나일론</span>
 						</li>
 						<li>
-							<span>무이자할부</span>
-							<span>부분 무이자 할부 혜택 <img src="images/view_btn_nointerest_card.gif" alt="무이자카드보기"></span>
+							<span class="bx1">사이즈</span>
+							<span>W115/H75/D20</span>
+						</li>
+						<li class="line">
+							<span class="bx1 bx1_color">색상</span>
+                            <div class="pdc_color on_color">
+							<a href="#">
+                                <img src="images/PT-592-09992PT10.jpg" alt="">
+                            </a>
+                            </div>
+                            <div class="pdc_color">
+							<a href="">
+                                <img src="images/PT-592-09992PT50.jpg" alt="">
+                            </a>
+                            </div>
 						</li>
 						<li>
-							<span>상품코드</span>
-							<span id="gcode">23fdfsdfsfsd</span>
-						</li>
-						<li>
-							<span>사이즈</span>
-							<span>95 100 105 110</span>
-						</li>
-						<li>
-							<span>구매수량</span>
+							<span class="bx1">수량</span>
 							<span>
 								<input type="text" id="sum" value="1" readonly />
 								<!--
@@ -129,28 +158,42 @@
 								</b>
 							</span>
 						</li>
-						<li>
-							<span>컬러</span>
-							<span></span>
-						</li>
-						<li>
-							<span>권장계절</span>
-							<span>여름</span>
-						</li>
-						<li class="tot">
-							<span>총합계</span>
-							<span id="total">13,000</span>원
-						</li>
+					
 					</ol>
-
 				</div>
-				<div>
-					<!--버튼영역-->
-					<button class="btn btn1">BUY NOW</button>
-					<button class="btn">SHOPPING CART</button>
-					<button class="btn">WISH LIST</button>
+                   <div class="btn_box">
+                        <div class="total">
+                            <p class="tot_txt">총 상품금액</p>
+                            <p class="tot_won">68,000원</p>
+                        </div>
+                        <div class="btn_click">
+                            <!--버튼영역-->
+                            <button class="btn btn1">PURCHASE</button>
+                            <button class="btn">ADD TO BAG</button>
+                            <button class="btn">WISHLIST</button>
+                            <button class="btn">재입고 알림 설정하기</button>
 
-				</div>
+                        </div>
+                        <div class="sns_btn">
+                            <div class="facebook ico">
+                                <a href="">
+                                    
+                                </a>
+                            </div>
+                            <div class="twitter ico">
+                                <a href="">
+                                
+                                </a>
+                            </div>
+                            <div class="kakao ico">
+                                <a href="">
+                                
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div> 
 			</li>
 		</ul>
 		<aside class="dimgs">
@@ -158,9 +201,310 @@
 
 		</aside>
 	</section>
-   
+    <section class="goods_text_box">
+        <p class="goods_tit">PRODUCT INFORMATION</p>
+        <p>짐바브웨 코튼과 코듀라 나일론 원단을 사용하여 제작 된 원단을 사용한 시리즈로 옅은 블랙컬러가 디자인을 돋보이게 하며 비즈니스 캐주얼과 수많은 스타일에 잘 어울려서 인기가 많은 시리즈 입니다. 짐바브웨 코튼은 해발 1500m 이상의 고지에서 유기농으로 재배되고 수확은 전부 손으로 따서 제작을 하여 세계최고의 품질을 자랑 합니다. 이런 코튼과 코듀라를 평직한 ‘코튼라＇는 천연 소재 특유의 자연스러움과 나일론의 힘, 광택감을 동시에 가진 기존에는 찾아 볼 수 없었던 감촉이 특징입니다.</p>
+    </section>
+    <div id="reco">
+        <div class="swiper-container">
+        <span class="bld">RECOMMEND(추천)</span>
+             <div class="text2">
+                <p class="ins2">RELATED ITEMS</p>
+                <!-- <p class="txt2">Introduce Popular Items</p> -->
+            </div>
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <ol class="reco_page1 reco">
+                        <li class="m1">
+                            <a href="#">
+                               <img src="images/recommend/01PT-592-09988PT50.jpg" alt="PT-592-09992PT10">
+                               <span>SMOKY MOBILE POUCH</span><br>
+                               <span>판매가격 118,000원</span>
+                            </a>
+                        </li>
+                        <li class="m2">
+                            <a href="#">
+                                <img src="images/recommend/02PT-592-09988PT10.jpg" alt="PT-622-66672PT30">
+                                <span>SMOKY MOBILE POUCH</span><br>
+                                <span>판매가격 118,000원</span>
+                            </a>
+                        </li>
+                        <li class="m3">
+                            <a href="#">
+                                <img src="images/recommend/03PT-592-07508PT50.jpg" alt="PT-622-69125PT11">
+                                <span>SMOKY WAIST BAG</span><br>
+                                <span>판매가격 218,000원</span>
+                            </a>
+                        </li>
+                        <li class="m4">
+                            <a href="#">
+                                <img src="images/recommend/04PT-592-07508PT10.jpg" alt="PT-680-17982PT30">
+                                <span>SMOKY WAIST BAG</span><br>
+                                <span>판매가격 218,000원</span>
+                            </a>
+                        </li>
+                        <li class="m5">
+                            <a href="#">
+                                <img src="images/m5.jpg" alt="PT-707-07178PT60">
+                                <span>SMOKY DOCUMENT CASE</span><br>
+                                <span>판매가격 218,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            <li class="swiper-slide">
+                <ol class="reco_page2 reco">
+                     <li class="m6">
+                            <a href="#">
+                               <img src="images/recommend/06PT-592-07576PT50.jpg" alt="PT-592-07576PT10">
+                               <span>SMOKY RUCKSACK</span><br>
+                               <span>판매가격 288,000원</span>
+                            </a>
+                        </li>
+                        <li class="m7">
+                            <a href="#">
+                                <img src="images/recommend/07PT-592-07576PT10.jpg" alt="PT-876-05808PT10">
+                                <span>SMOKY RUCKSACK</span><br>
+                                <span>판매가격 248,000원</span>
+                            </a>
+                        </li>
+                        <li class="m8">
+                            <a href="#">
+                                <img src="images/recommend/08PT-592-06579PT10.jpg" alt="PT-892-15106PT50">
+                                <span></span><br>
+                                <span>판매가격 198,000원</span>
+                            </a>
+                        </li>
+                        <li class="m9">
+                            <a href="#">
+                                <img src="images/recommend/09PT-592-06372PT50.jpg" alt="PT-539-05284PT10">
+                                <span>SMOKY MONEY CLIP</span><br>
+                                <span>판매가격 78,000원</span>
+                            </a>
+                        </li>
+                        <li class="m10">
+                            <a href="#">
+                                <img src="images/recommend/10PT-592-06372PT10.jpg" alt="PT-592-06372PT50">
+                                <span>SMOKY MONEY CLIP</span><br>
+                                <span>판매가격 78,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            <li class="swiper-slide">
+                <ol class="reco_page3 reco">
+                      <li class="m11">
+                            <a href="#">
+                               <img src="images/recommend/11PT-592-09992PT50.jpg" alt="PT-737-17820PT10">
+                               <span>SMOKY CARD CASE</span><br>
+                               <span>판매가격 68,000원</span>
+                            </a>
+                        </li>
+                        <li class="m12">
+                            <a href="#">
+                                <img src="images/recommend/12PT-592-09992PT10.jpg" alt="PT-892-15103PT50">
+                                <span>SMOKY CARD CASE</span><br>
+                                <span>판매가격 68,000원</span>
+                            </a>
+                        </li>
+                        <li class="m13">
+                            <a href="#">
+                                <img src="images/recommend/13PT-592-06577PT50.jpg" alt="PT-703-06980PT10">
+                                <span>SMOKY TOTE BAG (M)</span><br>
+                                <span>판매가격 278,000원</span>
+                            </a>
+                        </li>
+                        <li class="m14">
+                            <a href="#">
+                                <img src="images/recommend/14PT-592-07628PT50.jpg" alt="PT-622-68331PT11">
+                                <span>SMOKY SHOULDER BAG</span><br>
+                                <span>판매가격 228,000원</span>
+                            </a>
+                        </li>
+                        <li class="m15">
+                            <a href="#">
+                                <img src="images/recommend/15PT-592-07628PT10.jpg" alt="PT-592-06579PT10">
+                                <span>SMOKY SHOULDER BAG</span><br>
+                                <span>판매가격 288,000원</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+                    <!-- Add Pagination -->
+              </ul>
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="detail_box">
+        <div class="tab-box _tab3">
+            <a href="#detailGoods" class="on">PRODUCT DETAIL</a><!--활성화시 클래스 on-->
+            <a href="#returnGoods">RETURN &amp; EXCHANGE &amp; A/S POLICY</a>
+            <a href="#reviewGoods">REVIEW(1)</a>
+        </div>
+        <div class="detail__tab">
+            <div class="detailGoods display on">
+                <div class="con">
+                    <p class="tit_tab">INFORMATION</p>
 
-        
+                    <table class="table__goods">
+                        <colgroup>
+                            <col width="182px" />
+                            <col width="*" />
+                        </colgroup>
+
+                        <tr>
+                            <th>종류</th>
+                            <td>CARD/BUSINESS CARD CASE</td>
+                        </tr>
+
+                        <tr>
+                            <th>제품소재</th>
+                            <td>나일론</td>
+                        </tr>
+
+                        <tr>
+                            <th>색상</th>
+                            <td>BLACK</td>
+                        </tr>
+
+                        <tr>
+                            <th>치수</th>
+                            <td>W115/H75/D20</td>
+                        </tr>
+
+                        <tr>
+                            <th>제조국</th>
+                            <td>일본</td>
+                        </tr>
+
+                        <tr>
+                            <th>취급시 주의사항</th>
+                            <td>취급주의서 확인</td>
+                        </tr>
+
+                        <tr>
+                            <th>A/S 책임자와 전화번호</th>
+                            <td>Porter_Korea 02)540-0895</td>
+                        </tr>
+
+                        <tr>
+                            <th>품질보증기준</th>
+                            <td>구입일로부터 1년</td>
+                        </tr>
+
+                        <tr>
+                            <th>수입자</th>
+                            <td>㈜ 스타럭스</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="returnGoods display">
+                <div class="con">
+                    <table class="table__goods">
+                        <colgroup>
+                            <col width="182px" />
+                            <col width="*" />
+                        </colgroup>
+
+                        <tr>
+                            <th>교환/환불 안내</th>
+                            <td>
+                                상품 발송일 포함 7일 이내 반품 접수 및 도착 완료시 교환/환불 가능합니다.<br/>
+                                변심 반품의 경우 제품 및 포장 상태가 재판매 가능하여야 합니다.<br/>
+                                더스트백, 상품택 중 하나라도 없을 경우, 반품처리가 되지 않습니다.<br/>
+                                상품 불량인 경우는 배송비를 포함한 전액이 환불됩니다.<br/>
+                                오렌지 컬러 원사가 보이는 제품은 불량 상품이 아닌 정상 상품으로 교환/환불이 불가합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주의사항</th>
+                            <td>
+                                지갑류를 제외한 악세서리 상품은 변심에 따른 교환/환불이 불가합니다.<br />
+                                구매 내역이 확인되지 않는 경우 교환/환불이 불가합니다.<br />
+                                구매자가 미성년자인 경우에는 상품 구입 시 법정대리인이 동의하지 아니하면 미성년자 본인 또는 법정대리인이 구매취소 할 수 있습니다.<br />
+                                온라인스토어에서 구입한 상품은 매장에서 교환/환불이 불가합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제품 교환/환불 과정</th>
+                            <td>
+                                포터 온라인스토어에서 구매한 제품을 반품하기 위해서는 아래의 과정을 통해 접수해 주시기 바랍니다.<br />
+                                <ul>
+                                    <li>
+                                        <span>1.</span> 구매한 제품을 배송된 그대로의 형태로 포장합니다.
+                                    </li>
+                                    <li>
+                                        <span>2.</span> 상품 수령 후 교환/반품 가능 기간 내 "*마이페이지"에서 직접 접수 하신 뒤, 상품과 동봉된 반품 및 교환신청서를 작성해 주세요.<br />
+                                        반품주소지 : 서울시 강남구 가로수길 83, 지하 1층 포터 코리아 (신사동 530-4) (지정된 반송처로 반송되지 않을 시, 교환/반품 절차가 지연될 수 있습니다.)
+                                    </li>
+                                </ul>
+                                <span class="small">* 출고 이후 환불요청 시 상품 회수 후 처리됩니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>A/S안내</th>
+                            <td>
+                                국내 공식수입원 ㈜스타럭스를 통해 구매한 상품만 AS 가능합니다.<br />
+                                사용 후 발생한 수선 건에 대해서는 유상 수선이 원칙입니다.<br />
+                                모든 수선은 제조사인 일본에서의 진행이 원칙이며, 유상의 경우 배송비가 발생될 수 있으며, 경우에 따라 2-3개월 수선 기간이 소요 됩니다.<br />
+                                시즌 제품 및 컬렉션 종료로 인하여 일부 제품의 경우 부자재 재고가 없을 수 있으며, AS 가능여부에 따라 대체 가능한 부속품으로 제안을 드립니다.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="reviewGoods display">
+                <input type="hidden" name="reviewProductNo_temp" id="reviewProductNo_temp" value="1411">
+                <input type="hidden" name="reviewProductCode_temp" id="reviewProductCode_temp" value="PT-592-09992PT10">
+                <input type="hidden" name="reviewProductStyle_temp" id="reviewProductStyle_temp" value="PT-592-09992">
+
+                <div class="con">
+                    <button type="button" class="btn__write" data-no="1411" data-no2="PT-592-09992">리뷰 작성하기</button>
+
+                    <!--리뷰 있을때-->
+                    <div class="review-box">
+                        <ul class="list_review">
+
+                            <li data-page="1" data-pcount="1" data-total="1">
+                                <div class="star-off">
+                                    <div class="star-on" style="width: 100%;"></div>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <p>
+                                        
+										포터 제품 사고싶어서 사봤습니다 찍찍이는 더러워진다는말을 봐서 버튼형식으로 된걸 샀습니다. 재질이나 디자인 맘에들구요 다만 천원짜리지폐도 넣기 힘들다는점(이뻐보여서 잘알아보지 않고 사버렸네요ㅜㅜ), 제가 받은게 포터로고가 조금 삐뚤하다는점이 아쉽네요  카드한두개만 들고다녀야겠어요ㅎㅎ!
+											
+                                    </p>
+                                    <span>color : black</span>
+                                </a>
+                                <div class="id">hslee0130</div>
+                                <div class="date">2021.03.19</div>
+
+                            </li>
+
+
+                        </ul>
+
+                        <!--button type="button" class="btn__more btn__style1" id="review_next" data-val="1">후기 더 보기</button-->
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- // end of :: contents -->
+    </section>
+
+</div>  
     <!---------------------------------------------------------------------------->
     <!--3.하단영역-->
       <footer id="info">

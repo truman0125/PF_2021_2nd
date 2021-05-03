@@ -290,9 +290,9 @@ header .logo a{
     top: 0;
     left: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0,0,0);
-    line-height: 1;
+    line-height: 0.7;
     text-decoration: underline;
 }
 /*가상요소로 인스타그램 로고 넣기*/
